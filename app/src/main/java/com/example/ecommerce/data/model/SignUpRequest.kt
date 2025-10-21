@@ -1,15 +1,15 @@
-package com.example.ecommerce.model
+package com.example.ecommerce.data.model
 
 
 import com.google.gson.annotations.SerializedName
 
-data class User(
+data class SignUpRequest(
     @SerializedName("email_id")
     val emailId: String,
     @SerializedName("full_name")
     val fullName: String,
     @SerializedName("mobile_no")
     val mobileNo: String,
-    @SerializedName("user_id")
-    val userId: String
+    @SerializedName("password")
+    val password: String
 )
